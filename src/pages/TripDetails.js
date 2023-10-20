@@ -8,7 +8,7 @@ const TripDetails = ({data}) => {
 
     const {id} = useParams();
     const [post, setPost] = useState({id: 0, title: "", description: "", img_url: "", num_days: 0, start_date: "", end_date: "", total_cost: 0.0 })
-    const [activities, setActivites] = useState([])
+    const [activities, setActivities] = useState([])
     const [destinations, setDestinations] = useState([])
 
     useEffect(() => {
