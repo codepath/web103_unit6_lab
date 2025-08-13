@@ -1,6 +1,5 @@
-import React from 'react'
 import './DestinationCard.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 
 
 const DestinationCard = (props) =>  {

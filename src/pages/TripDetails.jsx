@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import { Link, useParams } from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import { Link, useParams } from 'react-router';
 import ActivityBtn from '../components/ActivityBtn';
 import DestinationBtn from '../components/DestinationBtn';
 import './TripDetails.css'

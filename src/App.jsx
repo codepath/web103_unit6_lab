@@ -1,16 +1,14 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
-import { useRoutes } from 'react-router-dom'
+import { useState, useEffect } from 'react';
+import { Link, useRoutes } from 'react-router'
 import ReadTrips from './pages/ReadTrips'
 import CreateTrip from './pages/CreateTrip'
 import EditTrip from './pages/EditTrip'
 import CreateDestination from './pages/CreateDestination';
 import ReadDestinations from './pages/ReadDestinations'
 import TripDetails from './pages/TripDetails'
-import { Link } from 'react-router-dom'
 import CreateActivity from './pages/CreateActivity';
 import AddToTrip from './pages/AddToTrip';
-
 
 
 const App = () => {
