@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { useParams } from 'react-router';
 import './CreateDestination.css'
 
 const CreateDestination = () => {
 
     const [destination, setDestination] = useState({destination: "", description: "", city: "", country: "", img_url: "", flag_img_url: "" })
-    const {trip_id} = useParams();
 
     const handleChange = (event) => {
         const {name, value} = event.target;
@@ -18,21 +16,8 @@ const CreateDestination = () => {
     }
     
     const createDestination = async (event) => {
-        
+
         event.preventDefault();
-
-
-        const addDestination = async () => {
-
- 
-        
-        }
-
-        const createTripDestination = async (destination_id) => {
-
-
-        
-        }
 
 
     }
@@ -64,10 +49,6 @@ const CreateDestination = () => {
 
                 <label>Flag Image URL</label><br />
                 <input type="text" id="flag_img_url" name="flag_img_url" value={destination.flag_img_url} onChange={handleChange}/><br />
-                <br/>
-
-                <label>Trip ID</label><br />
-                <input type="text" id="flag_img_url" name="flag_img_url" value={trip_id} readOnly/><br />
                 <br/>
 
                 <input type="submit" value="Submit" onClick={createDestination} />

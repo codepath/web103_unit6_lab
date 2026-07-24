@@ -44,7 +44,7 @@ const App = () => {
       element: <TripDetails data={trips} />
     },
     {
-      path:"/destination/new/:trip_id",
+      path:"/destination/new",
       element: <CreateDestination />
     },
     {
@@ -68,6 +68,7 @@ const App = () => {
         <Link to="/"><button className="headerBtn">Explore Trips</button></Link>
         <Link to="/destinations"><button className="headerBtn">Explore Destinations</button></Link>
         <Link to="/trip/new"><button className="headerBtn"> + Add Trip </button></Link>
+        <Link to="/destination/new"><button className="headerBtn"> + Add Destination </button></Link>
       </div>
         {element}
     </div>
