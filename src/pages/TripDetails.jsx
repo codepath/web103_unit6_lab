@@ -53,7 +53,7 @@ const TripDetails = ({data}) => {
                 {
                 activities && activities.length > 0 ?
                 activities.map((activity,index) => 
-                    <ActivityBtn id={activity.id} activity={activity.activity} num_votes={activity.num_votes}/>
+                    <ActivityBtn key={activity.id} id={activity.id} activity={activity.activity} num_votes={activity.num_votes}/>
                 ) : ''
                 }
                     <br/>
@@ -63,7 +63,7 @@ const TripDetails = ({data}) => {
                 {
                 destinations && destinations.length > 0 ?
                 destinations.map((destination,index) => 
-                    <DestinationBtn id={destination.id} destination={destination.destination} />
+                    <DestinationBtn key={destination.id} id={destination.id} destination={destination.destination} />
                 ) : ''
                 }
                 </div>
