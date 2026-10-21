@@ -66,8 +66,6 @@ const TripDetails = ({data}) => {
                     <DestinationBtn id={destination.id} destination={destination.destination} />
                 ) : ''
                 }
-                    <br/>
-                    <Link to={'../../destination/new/'+id}><button className="addDestinationBtn">+ Add Destination</button></Link>
                 </div>
             </div>
             
